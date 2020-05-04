@@ -198,10 +198,9 @@
             </tr>
         </table>
     </div> -->
-    <div class = "task_5">
+    <!-- <div class = "task_5">
         <a href="/about"><img src="./images/yoda.jpg" title="О сайте (yooodaaa)" /></a>        
-    </div>
-    <!--TODO task6 & task7-->
+    </div> -->
     <!-- <div class = "task_6">
         <form action="/path-to-server-endpoint" method="post">
             <div>
@@ -212,20 +211,92 @@
                     <input type="text" name="surname">
                 </label>
             </div>
-            <p>
-                <label>Пароль
-                    <input type="password" name="password">
+            <div>
+                <p><label>Фото
+                    <input type="file" name="photo" type="file">
+                </label></p>
+            </div>
+            <div>
+                <p>
+                    <label>Пароль
+                        <input type="password" name="password">
+                    </label>
+                </p>
+                <p>
+                    <label>Подтверждение пароля
+                        <input type="password" name="confirm_password">
+                    </label>
+                </p>
+            </div>
+            <div>
+                <label>Выберите город 
+                    <select name="cities">
+                        <option>ваш город</option>
+                        <option>Мурманск</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Чернобыль</option>
+                        <option>Магадан</option>
+                        <option>Ухань</option>
+                    </select>
                 </label>
-            </p>
-            <p>
-                <label>Подтверждение пароля
-                    <input type="password" name="confirm_password">
+            </div>
+            <div>
+                Коротко о себе
+                <div>
+                    <textarea rows = 5 cols = 70></textarea>
+                </div>
+            </div>
+            <div>
+                <label>Пол
+                    <label><input type="radio" name="gender" value="man">М</label>
+                    <label><input type="radio" name="gender" value="women">Ж</label>
                 </label>
-            </p>
-         </form>
-    </div>
-    <div class = "task_7">
-        
+            </div>
+            <div>
+                <label>Любимые дисциплины:<br>
+                    <select name="subjects[]" multiple>
+                        <option>Матан</option>
+                        <option>Линал</option>
+                        <option>ООП</option>
+                        <option>Программирование</option>
+                        <option>Философия</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <p><label>Планируете поступать в магистратуру?<br>
+                    <input type="radio" name="magistracy" value="yes">Да<br>
+                    <input type="radio" name="magistracy" value="no">Нет<br>
+                    <input type="radio" name="magistracy" value="defalt" checked>Не знаю<br>
+                </label></p>
+            </div>
+            <div>
+                <p><label>Что нравится в специальности?<br>
+                    <input type="checkbox" name="profession" value="1">Люблю компы<br>
+                    <input type="checkbox" name="profession" value="2">Обожаю матан и физику<br>
+                    <input type="checkbox" name="profession" value="3">Перспективы высокой зарплаты<br>
+                    <input type="checkbox" name="profession" value="4">Программы делают жизнь лучше
+                </label></p>
+            </div>
+            <div>
+                <p><label>Предпочитаемые источники информации:<br>
+                    <input type="checkbox" name="information" value="1">Книги<br>
+                    <input type="checkbox" name="information" value="2">Хабр<br>
+                    <input type="checkbox" name="information" value="3">Секретный форум в даркнете<br>
+                    <input type="checkbox" name="information" value="4">YouTube<br>
+                    <input type="checkbox" name="information" value="5">Спросить у специалиста<br>
+                    <input type="checkbox" name="information" value="6">У мен я есть специальнообученный раб, 
+                    который делает все за меня
+                </label></p>
+            </div>
+            <div>
+                <button type="reset">Сбросить</button>
+                <button type="submit">Подтвердить</button>
+            </div>
+        </form>
     </div> -->
+    <div class = "task_7">
+        <iframe name="video" width="1000" height="600" src="https://www.youtube.com/embed/VPDJXngp2bM"></iframe>
+    </div>
 </body>
 </html>
