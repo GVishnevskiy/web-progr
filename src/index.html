@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <div class = "task_1">
+    <div class = "task_1" hidden>
         <h1><p>Заголовок 1 уровня</p></h1>
         <h2><p><i>Заголовок 2 уровня</i></p></h2>
         <h3><p>Заголовок 3 уровня</p></h3>
         <h4><p>Заголовок 4 уровня</p></h4>
         <h5><p>Заголовок 5 уровня</p></h5>
         <h6><p>Заголовок 6 уровня</p></h6>
-    </div> -->
-    <!-- <div class = "task_2">
+    </div>
+    <div class = "task_2" hidden>
         <p>
             «Статья 671
         </p>
@@ -55,8 +55,8 @@
             Государство, обеспечивая приоритет семейного воспитания, берет на себя обязанности родителей в отношении детей, 
             оставшихся без попечения.»;
         </p>
-    </div> -->
-    <!-- <div class = "task_3">
+    </div>
+    <div class = "task_3" hidden>
         <ol>
             <li>
                 Семестр 1
@@ -136,8 +136,8 @@
                 Соответственно языки с неявной типизацией перекладывают эту задачу на компилятор / интерпретатор.
             </dd>
         </dd>
-    </div> -->
-    <!-- <div class = "task_4">
+    </div>
+    <div class = "task_4" hidden>
         <table>
             <tr>
                 <th colspan="5">Семестр 1</th>
@@ -196,12 +196,12 @@
                 <td>4</td> <td>МЛиТА</td>                   <td>экзамен</td>        <td>5</td>              <td>Жулина О.И.</td>
             </tr>
         </table>
-    </div> -->
-    <!-- <div class = "task_5">
+    </div>
+    <div class = "task_5" hidden>
         <a href="/about"><img src="./images/yoda.jpg" title="О сайте (yooodaaa)" /></a>        
-    </div> -->
-    <!-- <div class = "task_6">
-        <form action="/path-to-server-endpoint" method="post">
+    </div>
+    <div class = "task_6">
+        <form action="/path-to-server-endpoint" method="post" enctype="multipart/form-data">
             <div>
                 <label>Имя
                     <input type="text" name="name">
@@ -212,7 +212,7 @@
             </div>
             <div>
                 <p><label>Фото
-                    <input type="file" name="photo" type="file">
+                    <input type="file" name="photo">
                 </label></p>
             </div>
             <div>
@@ -230,12 +230,12 @@
             <div>
                 <label>Выберите город 
                     <select name="cities">
-                        <option>ваш город</option>
-                        <option>Мурманск</option>
-                        <option>Санкт-Петербург</option>
-                        <option>Чернобыль</option>
-                        <option>Магадан</option>
-                        <option>Ухань</option>
+                        <option disabled>Ваш город</option>
+                        <option value="Мурманск">Мурманск</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Чернобыль">Чернобыль</option>
+                        <option value="Магадан">Магадан</option>
+                        <option selected = "selected" value="Ухань">Ухань</option>
                     </select>
                 </label>
             </div>
@@ -247,18 +247,19 @@
             </div>
             <div>
                 <label>Пол
-                    <label><input type="radio" name="gender" value="man">М</label>
+                    <label><input type="radio" name="gender" value="man" checked>М</label>
                     <label><input type="radio" name="gender" value="women">Ж</label>
                 </label>
             </div>
             <div>
                 <label>Любимые дисциплины:<br>
                     <select name="subjects[]" multiple>
-                        <option>Матан</option>
-                        <option>Линал</option>
-                        <option>ООП</option>
-                        <option>Программирование</option>
-                        <option>Философия</option>
+                        <option disabled>Выберите несколько дисциплин</option>
+                        <option value="Матан">Матан</option>
+                        <option value="Линал">Линал</option>
+                        <option value="ООП">ООП</option>
+                        <option value="Программирование">Программирование</option>
+                        <option value="Философия">Философия</option>
                     </select>
                 </label>
             </div>
@@ -293,8 +294,8 @@
                 <button type="submit">Подтвердить</button>
             </div>
         </form>
-    </div> -->
-    <div class = "task_7">
+    </div>
+    <div class = "task_7" hidden>
         <iframe name="video" width="1000" height="600" src="https://www.youtube.com/embed/VPDJXngp2bM"></iframe>
     </div>
 </body>
